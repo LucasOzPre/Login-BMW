@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.left-side {
+    height: 100vh;
+    position: relative;
+    width: 616px;
+    min-width: 616px;
+    margin: 0;
+}
+
+.login-form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.custom-content {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  padding-left: 128px;
+  padding-right: 128px;
+  padding-top: 88px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 33px;
+}
+
+.register-question {
+  padding: 10px;
+  padding-left: 0;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.email input {
+    height: 44px;
+    padding: 8px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+body {
+    display: flex;
+}
+
+button {
+    border: none;
+    height: 45px;
+    margin: 10px;
+    margin-left: 0;
+    width: 100%;
+    
+}
+
+.captcha-text {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+footer {
+    padding-left: 128px;
+    padding-right: 128px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-between;
+}
+
+img {
+
+}
