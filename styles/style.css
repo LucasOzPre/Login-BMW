@@ -1,101 +1,83 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
 * {
-  font-family: "Rubik", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.left-side {
-    height: fit-content;
-    position: relative;
-    width: 34%;
-    height: 100vh;
     margin: 0;
-}
-
-.login-form {
-  align-items: left;
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  width: 100%;
-  height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .custom-content {
-  align-items: left;
-  display: flex;
-  flex-direction: column;
-  padding-left: 128px;
-  padding-right: 128px;
-  padding-top: 88px;
-  width: 100%;
-}
-
-h1 {
-  font-size: 33px;
-}
-
-.register-question {
-  padding: 10px;
-  padding-left: 0;
-}
-
-.email {
     display: flex;
     flex-direction: column;
 }
 
-.email input {
-    height: 44px;
-    padding: 8px;
-    font-size: 18px;
+.left-side {
+    width: 400px;
+    padding: 4%;
+    background-color: #f0f0f0; /* Cor de fundo para a esquerda */
+}
+
+.left-side h3 {
+    margin-bottom: 4%;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.left-side label {
+    margin-bottom: 1%;
+    font-size: 14px;
+}
+
+.left-side input {
+    border: none;
+    height: 38px;
     margin-bottom: 20px;
 }
 
-body {
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-button {
+.left-side button {
     border: none;
-    height: 45px;
-    margin: 10px;
-    margin-left: 0;
     width: 100%;
-    
+    height: 28px;
+    margin-bottom: 8px;
 }
 
-.captcha-text {
-    margin-top: 5px;
-    margin-bottom: 25px;
-}
-
-footer {
-    padding-left: 128px;
-    padding-right: 128px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    height: 90px;
-    justify-content: space-between;
-}
-
-img {
-    width: 100vw;
-    height: 100vh;
-    background-size: contain;
-    background-repeat: no-repeat;
+.right-side {
+    background-image: url('/img/bmw_background.png');
+    background-size: cover;
     background-position: center;
+    width: 100vw;
+    height: 100vh; /* Ajusta a altura para ocupar toda a altura da tela */
 }
 
-@media(min-width: 768px) {
-    .body {
-        display: flex;
-        flex-direction: column-reverse;
+.legal-info {
+    margin-top: 25px;
+}
+
+    .right-side {
+        height: 100vh; /* Ajusta a altura para metade da altura da tela em telas menores */
     }
+
+    body {
+        display: flex;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .right-side {
+
+            height: 20vh;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .left-side {
+            width: 100%;
+            height: auto;
+            padding: 10%;
+        }
+
+        
 }
